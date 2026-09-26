@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible issue
+body:
+  - type: markdown
+    attributes:
+      value: Please do not attach credentials, private images, or raw Codex logs. Security issues belong in private vulnerability reporting.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include steps, expected behavior, and what actually happened.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node version, Codex version, browser, and Studio commit/version.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Connection check
+      description: Optional, sanitized output of npm run doctor. Remove anything private.
